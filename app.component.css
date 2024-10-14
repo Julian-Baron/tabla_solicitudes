@@ -1,0 +1,110 @@
+*{
+    list-style: none;
+
+}
+.header {
+    margin: 3rem 5rem 5rem 5rem;
+}
+body {
+    font-family: Arial, sans-serif; /* Fuente limpia y moderna */
+    background-color: #750808; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.menu_dropdown{
+    height: 100vh;
+    width: 40%; /* Usando vw para responsividad */
+    background-color: #befff4;
+    margin-top:1vh;   
+    display: grid;
+    place-items: center; /* Centra el contenido */
+    overflow: hidden;
+    transform: translateX(-130%); /* Oculto inicialmente */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+    position: fixed; 
+    border-radius: 3%;
+    
+}
+
+/*Cabezera de la palgina web*/
+.header_one {
+    background-color: #1fe7a5;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+    resize: horizontal;
+}
+
+.text_header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    margin-left: 4rem;
+    text-decoration: none;
+}
+.new_request:hover{
+    background-color: #149268;
+    border-radius: 1rem;
+    color: #ddd;
+}
+.new_request{
+    padding: 10px 10px 10px 10px;
+    color: #000000;
+}
+
+.content--link{
+    display: flex;
+    margin-left: 50%;
+    border: #050a33;
+    width: 100vh;
+    background-color: NONE;
+    border-radius: 15px 0px 0px 15px;
+}
+.text_right{
+    margin-right: 2rem;
+    text-decoration: none;
+}
+.table--content1{
+    margin-bottom: 8rem;    
+}
+/*Fin del css del header*/
+
+table{
+    width: 100%;
+    border-collapse: collapse; /* Sin espacios entre bordes */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #fff; /* Fondo blanco para la tabla */
+    justify-content: center;
+    align-items: center;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Borde inferior sutil */
+}
+
+tbody {
+    font-size: 15px;/* Tamaño de la fuente */
+}
+
+th {
+    background-color: #1fe7a5; /* Fondo gris claro para encabezados */
+    font-weight: normal; /* No usar negrita para encabezados */
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Cambio de fondo al pasar el mouse */
+}
+
+tr:last-child td {
+    border-bottom: none; /* Eliminar borde inferior en la última fila */
+}

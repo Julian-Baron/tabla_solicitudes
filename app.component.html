@@ -1,0 +1,83 @@
+<div class="header_one" id="header_fond">
+  <div class="menu_dropdown">
+    <ul class="nav_link">
+      <li class="link"><a href="aa">Inicio</a></li>
+      <li class="link"><a href="aa">Inicio</a></li>
+      <li class="link"><a href="a">Inicio</a></li>
+    </ul>
+  </div>
+  <div class="menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <span class="text_header">PLAZOLETA</span>
+  <img src="flor_icon.png" alt="icono de flor" class="icon" srcset />
+  <div class="content--link">
+    <a href="asd" class="new_request text_header">Crear solicitud</a>
+    <a href="asd" class="new_request text_header">Cerrar sesion</a>
+  </div>
+</div>
+
+<div class="header">
+  <div class="table--content1">
+    <h5 class="header_title">PENDIENTES</h5>
+    <table>
+      <thead class="row-target">
+        <tr>
+          <th>Nombre</th>
+          <th>Solicitudes</th>
+          <th>Asignado a</th>
+          <th>Estado</th>
+          <th>Fecha de culminación</th>
+          <th>Fecha de solicitud</th>
+        </tr>
+      </thead>
+      <tbody class="col_down">
+        <tr>
+          <td>{{ tablaP_nombre }}</td>
+          <td>{{ tablaP_solicitudes }}</td>
+          <td>{{ tablaP_asignacion }}</td>
+          <td>{{ tablaP_estado }}</td>
+          <td>{{ tablaP_fechaCulminacion }}</td>
+          <td>{{ tablaP_fechaSolicitud }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="table--content2">
+    <h5 class="header_title2">SOLICITUDES</h5>
+    <table>
+      <thead class="row-target">
+        <tr>
+          <th>Asignado a</th>
+          <th>Solicitudes</th>
+          <th>Estado</th>
+          <th>Fecha de solicitud</th>
+          <th>Fecha de culminación</th>
+          <th>Aprobacion</th>
+        </tr>
+      </thead>
+      <tbody class="col_down">
+        <tr>
+          <td>{{ tablaS_asignacion }}</td>
+          <td>{{ tablaS_solicitudes }}</td>
+          <td>{{ tablaS_estado }}</td>
+          <td>{{ tablaS_fechaSolicitud }}</td>
+          <td>{{ tablaS_fechaCulminacion }}</td>
+          <td>{{ tablaP_estado }}</td>
+          <td>
+            <input
+              class="container"
+              type="checkbox"
+              name="aprove"
+              placeholder="Realizado"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
